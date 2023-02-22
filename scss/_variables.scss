@@ -1,0 +1,25 @@
+$clr-3D:#3D3D3F;
+$clr-blue:#40A3F8;
+$fw-500: 500;
+$clr-3e3e:#3E3E3E;
+$clr-fff:#fff;
+
+
+/*-------------------------------------------------------------------------------------------------*/
+.button{
+   display: inline-block;
+   color: #fff;
+   background-color: $clr-blue;
+   border-radius: 5px;
+   padding: 0.87em 1.8em;
+   white-space: nowrap;
+   transition: 0.3s;
+   &:hover{
+      background-color: #1d8ff3;
+   }
+
+
+   @media (max-width: 500px){
+      padding: .3em 0.7em;
+   }
+}
