@@ -8,7 +8,7 @@
    <title>Health</title>
 </head>
 <body>
-   <div class="wrapper">
+   
       <header>
          <div class="container">
             <a href="#">
@@ -40,6 +40,7 @@
       </header>
 <!--------------------------------------------------------------------->
       <main>
+         <div class="wrapper">
          <section class="main__page">
             <div class="container">
                <div class="main__body">
@@ -48,23 +49,63 @@
                      <p>Join us and take care of yourself and your family with health services that will make you feel confident and safe in your daily life.</p>
                      <form action="#" method="#" class="main__form">
                         <input type="text" placeholder="Find your doctor">
-                        <select name="form-select" id="#">
-                           <option value="New York, USA">New York, USA</option>
-                           <option value="Texas">Texas, USA</option>
-                           <option value="Florida">Florida, USA</option>
-                        </select>
-                        <button type="button"></button>
+                        <div class="form__wrapper">
+                           <select name="form-select" id="#">
+                              <option value="New York, USA">New York, USA</option>
+                              <option value="Texas">Texas, USA</option>
+                              <option value="Florida">Florida, USA</option>
+                           </select>
+                        </div>
+                        <button type="submit"></button>
                      </form>
                </div>
-               <div class="main__picture"></div>
+               <div class="main__picture">
+                  <img src="img/main/female.png" alt="doctor">
+                  <ul>
+                     <li class="icons"></li>
+                     <li class="icons"></li>
+                     <li class="icons"></li>
+                     <li class="icons"></li>
+                     <li class="icons"></li>
+                  </ul>
+               </div>
             </div>
          </section>
+         <section class="easy__steps">
+            <div class="container">
+               <h3>3 Easy Steps and Get Your Solution</h3>
+               <div class="easy__steps-body">
+                  <div class="item">
+                     <div class="image-block">
+                        <img src="img/icons/blue-search.svg" alt="blue-search">
+                     </div>
+                     <h5>Find best doctor’s</h5>
+                     <p>Find your doctor easily with a minimum of effort. We've kept everything organised for you.</p>
+                  </div>
+                  <div class="item">
+                     <div class="image-block">
+                        <img src="img/icons/calendar.svg" alt="calendar">
+                     </div>
+                     <h5>Get Appointment</h5>
+                     <p>Ask for an appointment of the doctor quickly with almost a single click. We take care of the rest.</p>
+                  </div>
+                  <div class="item">
+                     <div class="image-block">
+                        <img src="img/icons/online.svg" alt="online">
+                     </div>
+                     <h5>Happy Consultations</h5>
+                     <p>Do consultations and  take the service based on your appointment. Get back to good health.</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
       </main>
 <!--------------------------------------------------------------------->
       <footer>
-
+         rgrg
       </footer>
-   </div>
+  
    <script src="js/main.js"></script>
 </body>
 </html>

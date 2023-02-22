@@ -17,9 +17,13 @@ $clr-fff:#fff;
    &:hover{
       background-color: #1d8ff3;
    }
-
-
    @media (max-width: 500px){
       padding: .3em 0.7em;
    }
+}
+.title{
+   font-weight: 500;
+   font-size:clamp(1.5rem,7vw,2.625rem);
+   letter-spacing: 0.02em;
+   color: $clr-3D;
 }
