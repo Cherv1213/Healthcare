@@ -4,11 +4,11 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
    <link rel="stylesheet" href="css/style.css">
    <title>Health</title>
 </head>
 <body>
-   
       <header>
          <div class="container">
             <a href="#">
@@ -32,9 +32,7 @@
                       </a></li>
                   </ul>
                  </nav>
-                 <a href="#" class="header__get-star">
-                  Get Started
-                 </a>
+                 <a href="#" class="header__get-star">Get Started</a>
               </div>
          </div>
       </header>
@@ -99,13 +97,60 @@
                </div>
             </div>
          </section>
+         <section class="quality">
+            <div class="container">
+               <div class="quality-image">
+                  <img src="img/doctors/Quality.jpg" alt="Quality">
+               </div>
+               <div class="quality__body">
+                  <h3>Best quality service with our experience doctors</h3>
+                  <p class="text">With our top doctors, we are able to provide best medical services above average We have highly experienced doctors, so don't worry They are also very talented in their fields</p>
+                  <ul class="quality__list">
+                     <li>Search your specialist & Online consultations anywhere</li>
+                     <li>Consultation our top specialists</li>
+                     <li>Doctors are available 24/7</li>
+                  </ul>
+                  <a href="#" class="button">Explore specialists</a>
+               </div>
+            </div>
+         </section>
+         <section class="service">
+            <div class="container">
+               <h5 class="title">Our Service</h5>
+               <p class="service__subtitle">Our doctors have high qualified skills and are guaranteed to help you recover from your disease.</p>
+               <div class="service__swiper swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="service__wrapper swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="service-slide swiper-slide">
+                     <img src="img/services/heart.svg" alt="heart">
+                     <h5>Cardiology</h5>
+                     <p>Our cardiologists are skilled at  the diagnosing and treating diseases
+                        of the cardiovascular system.</p>
+                    </div>
+                    <div class="service-slide swiper-slide">
+                     <img src="img/services/lungs.svg" alt="lungs">
+                     <h5>Pulmonology</h5>
+                     <p>Our Pulmonologist are skilled at  diagnosing treating diseases of the Pulmonology system.</p>
+                    </div>
+                    <div class="service-slide swiper-slide">
+                     <img src="img/services/med.png" alt="med">
+                     <h5>Medicine</h5>
+                     <p>Our medcine doctor are skilled at  diagnosing treating diseases of the  latest medicne system.</p>
+                    </div>
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="service-pagination swiper-pagination"></div>
+                </div>
+            </div>
+         </section>
       </div>
       </main>
 <!--------------------------------------------------------------------->
       <footer>
          rgrg
       </footer>
-  
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
    <script src="js/main.js"></script>
 </body>
 </html>
