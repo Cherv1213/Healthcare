@@ -1,0 +1,46 @@
+
+ 
+ /*-----------------------------------BODY--------------------------------------------------------------*/
+ body {
+   height: 100%;
+   line-height: 1.1;
+   font-family: "Roboto";
+   color: rgb(0, 0, 0);
+   max-width: 100%;
+   background-color: #ffffff;
+   font-weight: 400;
+   font-size: 20px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+ }
+ 
+ .wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+ }
+ 
+ .container {
+   max-width: 1075px;
+   padding: 0px 10px;
+   -webkit-box-sizing: content-box;
+   box-sizing: content-box;
+   margin: 0 auto;
+ }
+ 
+ main {
+   -webkit-box-flex: 1;
+       -ms-flex: 1 1 auto;
+           flex: 1 1 auto;
+ }
