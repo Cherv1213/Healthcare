@@ -667,3 +667,35 @@
    }
   
 }
+/*---------------------change----------------------------------------------------------------------------*/
+.change {
+   padding: 10.625rem 0 4rem;
+   .container {
+      padding: 80px 44px 0 120px;
+      background-color: $clr-blue;
+      border-radius: 12px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      background-image: url(../img/back-change.png);
+      background-position: 100px;
+      .title {
+         color: $clr-fff;
+         text-transform: capitalize;
+         margin-bottom: 1.3rem;
+      }
+      .button {
+         color: $clr-blue;
+         background-color: $clr-fff;
+         &:hover{
+            background-color: #e0e0e0;
+         }
+      }
+   }
+}
+.change-body {
+   max-width: 27rem;
+}
+.change-image {
+   margin-top: -190px;
+}
