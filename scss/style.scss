@@ -698,4 +698,136 @@
 }
 .change-image {
    margin-top: -190px;
+   
+
+   img{
+      width: 100%;
+   }
+}
+@media (max-width: 950px){
+   .change{
+      .container{
+         min-height: 320px;
+         padding: 1rem;
+         flex-direction: column-reverse;
+         padding-bottom: 1rem;
+         align-items: center;
+         text-align: center;
+         justify-content: center;
+      }
+   }
+}
+/*-------------------------------------------------------------------------------------------------*/
+
+footer{
+   background-color: $clr-fff;
+   padding-bottom: 2rem;
+   border-bottom: 1px solid hsla(0, 0%, 59%, 0.2);
+ .container {
+   
+}
+}
+.footer__body {
+   display: flex;
+   justify-content: space-between;
+   gap: 2rem;
+   padding: 2.2rem 0 1.9rem;
+   flex-wrap: wrap;
+   @media (max-width: 890px){
+      justify-content: center;
+   }
+}
+.body-footer__contacts {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   p{
+      color: #646464;
+      font-size: 0.875rem;
+   }
+   ul{
+      display: flex;
+      gap: 1rem;
+   }
+}
+
+.body-footer__category {
+   display: flex;
+   gap: clamp(3rem,7vw, 8.3rem);
+   ul{
+      li{
+         a{
+            color: #646464;
+            font-size: 0.875rem;
+         }
+      }
+      li:first-of-type{
+         a{
+            color: #323232;
+            font-weight: 700;
+         }
+      }
+   }
+   
+}
+
+
+.body-footer__subsribe {
+   display: flex;
+   flex-direction: column;
+   h5{
+      color: #323232;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+   }
+   p{
+      color: #646464;
+      font-size: 0.875rem;
+      margin-bottom: 1rem;
+   }
+   form{
+      display: flex;
+      flex-direction: column;
+      input{
+         margin-right: 1.25rem;
+         position: relative;
+         width: 100%;
+         background-color: rgba(245,246,250,.52);
+         border-radius: 8px;
+         padding: 1.0625rem 10px 1.0625rem 30px;
+         margin-bottom: 0.75rem;
+      }
+   }
+   .button {
+      @media (max-width: 500px){
+         padding-block: 1.5em;
+      }
+   }
+}
+
+.footer__rules {
+   padding: 0.625rem 0;
+   .container{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 1rem;
+   @media (max-width: 530px){
+      justify-content: center;
+   }
+   ul{
+      display: flex;
+      gap: 3rem;
+      li{
+         a{
+            color: #646464;
+            font-size: 0.875rem;
+         }
+      }
+   }
+}
+.copy {
+   color: #646464;
+   font-size: 0.875rem;
+}
 }
