@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
    <link rel="stylesheet" href="css/style.css">
    <title>Health</title>
@@ -48,8 +49,8 @@
                      <form action="#" method="#" class="main__form">
                         <input type="text" placeholder="Find your doctor">
                         <div class="form__wrapper">
-                           <select name="form-select" id="#">
-                              <option value="New York, USA">New York, USA</option>
+                           <select name="form-select" id="#" class="js-example-basic-single">
+                              <option selected value="New York, USA">New York, USA</option>
                               <option value="Texas">Texas, USA</option>
                               <option value="Florida">Florida, USA</option>
                            </select>
@@ -150,6 +151,13 @@
       <footer>
          rgrg
       </footer>
+
+<!--------------------------------------------------------------------->
+<script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
    <script src="js/main.js"></script>
 </body>
