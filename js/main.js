@@ -16,81 +16,85 @@ if(iconMenu){
 
 new Swiper('.service__swiper',{
    //Optional parameters
-      // direction: 'horizontal',
-       loop: true,
-       
-       spaceBetween:65,
+   // direction: 'horizontal',
+   loop: true,
+   centeredSlides:true, 
+   
    //    speed:300,
-
+   
    //    //количество слайдов для прокрутки 
    //    slidesPerGroup:1,
-
+   
    //    //вкючает слайдер 
    //    enabled:true,
-
+   
    // //вывод стрелок
-    breakpoints:{
+   breakpoints:{
       1000:{
          slidesPerView:3,
-       },
-       550:{
+         spaceBetween:65,
+      },
+      550:{
          slidesPerView:2,
-       },
-       320:{
+         
+      },
+      320:{
          slidesPerView:1,
+         spaceBetween:35,
        },
-    },
-
-   // navigation: {
-   //    nextEl: '.swiper-button-next',
-   //    prevEl: '.swiper-button-prev',
-   //  },
-
-     pagination: {
-       el: '.swiper-pagination',
-       clickable: true,
-   //    dynamicBullets: true,
-   //    type: 'fraction',
-   //    type: 'progressbar',
-     },
-    
-   //  scrollbar: {
-   //    el: '.swiper-scrollbar',
-   //    draggable: true,
-   //  },
-
+      },
+      
+      // navigation: {
+         //    nextEl: '.swiper-button-next',
+         //    prevEl: '.swiper-button-prev',
+         //  },
+         
+         pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            //    dynamicBullets: true,
+            //    type: 'fraction',
+            //    type: 'progressbar',
+         },
+         
+         //  scrollbar: {
+            //    el: '.swiper-scrollbar',
+            //    draggable: true,
+            //  },
+            
    //  //перетаскивать на пк
-     simulateTouch: true,
-     grabCursor: true,
-
+   simulateTouch: true,
+   grabCursor: true,
+   
    //  // нажатие на слайд
    //  slideToClickedSlide: true,
-
-   //  //управление клавиатурой
-     keyboard:{
-       enable: true,
-       onlyinViewport: true,
-     },
-
-   //  mousewheel:{
-   //    sensitivity: 1,
-   //  },
-
-   //  //автовысота
-   //  autoHeight:true,
-
-   //  //свободный режим
-   //  freeMode:true,
-
-   //  //автопрокрутка
-   //  autoplay:{
-   //    delay:50000,
-   //    stoponLastSlide:true,
-   //    //отключить после ручного переключения
-   //    disableOnInteraction: false,
-   //  },
    
-   //  //эффекты переключения слайдов
-   //  effect: 'slide',// 'fade', 'cube', 'coverflow', 'flip'  'creative',
-   centeredSlides:true,
-});
+   //  //управление клавиатурой
+   keyboard:{
+      enable: true,
+      onlyinViewport: true,
+   },
+   
+   //  mousewheel:{
+      //    sensitivity: 1,
+      //  },
+      
+      //  //автовысота
+      //  autoHeight:true,
+      
+      //  //свободный режим
+      //  freeMode:true,
+
+      //  //автопрокрутка
+      //  autoplay:{
+         //    delay:50000,
+         //    stoponLastSlide:true,
+         //    //отключить после ручного переключения
+         //    disableOnInteraction: false,
+         //  },
+         
+         //  //эффекты переключения слайдов
+         
+         //  effect: 'slide',// 'fade', 'cube', 'coverflow', 'flip'  'creative',
+      });
+      
