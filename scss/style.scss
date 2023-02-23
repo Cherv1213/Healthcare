@@ -72,14 +72,16 @@
          }
       }
 }
+/*-------------------------------------------------------------------------------------------------*/
 .select2 .select2-container .select2-container--default .select2-container--above .select2-container--focus{
    width: 100%;
 }
 .select2-container--default .select2-selection--single{
-   background-color: rgba(245, 246, 250, 0.52);
+   background-color: transparent;
    border: none;
 }
 .select2-container--default .select2-selection--single .select2-selection__rendered {
+   font-family: "Poppins";
    font-size: 0.875rem;
    color: $clr-3D;
    line-height: 1.5;
@@ -93,15 +95,24 @@
 .select2-container--default .select2-selection--single .select2-selection__arrow{
    top: -5px;
 }
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable{
+   background-color: $clr-blue;
+}
+/*-------------------------------------------------------------------------------------------------*/
 .form__wrapper{
    width: 100%;
    position: relative;
    margin-right: 1.875rem;
-   padding:  1.0625rem 10px 1.0625rem 30px;
+   padding:  1.0625rem 10px 1.0625rem 3.125rem;
    background-color: rgba(245, 246, 250, 0.52);
    border-radius: 8px;
-   select{
-      width: 100%;
+   
+   &::before{
+      content: url(../img/icons/location.svg);
+      position: absolute;
+      top: 18px;
+      left: 27px;
    }
 }
 
