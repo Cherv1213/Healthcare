@@ -39,7 +39,7 @@ new Swiper('.service__swiper',{
       },
       550:{
          slidesPerView:2,
-         
+         spaceBetween:35,
       },
       320:{
          slidesPerView:1,
