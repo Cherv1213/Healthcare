@@ -123,7 +123,7 @@ header{
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 4, 25, 0.9);
+      background-color: rgb(0, 0, 0);
       padding: 100px 30px 30px 30px;
       transition: bottom 0.3s ease 0s;
       overflow: auto;
@@ -135,13 +135,21 @@ header{
 
    .menu__list{
       justify-content: center;
+        flex-direction: column;
         
       li{
          padding: 3px 10px;
-         border-radius: 5px;
+         border-bottom: 1px solid #333;
+
          a{
             color: #fff;
             opacity: 1;
+            font-size: 1.5rem;
+            width: 100%;
+
+            &:focus{
+               color: rgb(87, 87, 241);
+            }
          }
       } 
    }
@@ -149,20 +157,20 @@ header{
       margin-right: 0;
   }
   .menu__item.top:nth-child(1){
-   background-color: #db1414;
+  
    animation: toTop 0.4s ease-in-out;
   }
   .menu__item.top:nth-child(2){
-   background-color: #15e041;
-   animation: toTop 0.5s ease-in-out;
-  }
-  .menu__item.top:nth-child(3){
-   background-color: #2814db;
+ 
    animation: toTop 0.6s ease-in-out;
   }
+  .menu__item.top:nth-child(3){
+   
+   animation: toTop 0.7s ease-in-out;
+  }
   .menu__item.top:nth-child(4){
-   background-color: hsl(298, 89%, 47%);
-   animation: toTop .7s ease-in-out;
+   
+   animation: toTop .8s ease-in-out;
   }
 }
 
@@ -176,3 +184,175 @@ header{
       opacity: 1;
    }
 }
+
+/*-------------------------------------------------------------------------------------------------*/
+$cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
+$mukta: 'Ek Mukta', sans-serif;;
+
+$menuItems: 7;
+
+body {
+    margin: 0;
+    line-height: 1.4;
+    background: #E1E1E1;
+}
+    .header {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 50px;
+        width: 100%;
+        background: rgba(#000,0.8);
+        overflow: hidden;
+        transition: all 0.5s ease-out, background 1s ease-out;
+        transition-delay: 0.2s;
+        z-index: 1;
+        .burger-container {
+            position: relative;
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            cursor: pointer;
+            transform: rotate(0deg);
+            transition: all 0.3s $cubic;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            #burger {
+                width: 18px;
+                height: 8px;
+                position: relative;
+                display: block;
+                margin: -4px auto 0;
+                top: 50%;
+                .bar {
+                    width: 100%;
+                    height: 1px;
+                    display: block;
+                    position: relative;
+                    background: #FFF;
+                    transition: all 0.3s $cubic;
+                    transition-delay: 0s;
+                    &.topBar {
+                        transform: translateY(0px) rotate(0deg);
+                    }
+                    &.btmBar {
+                        transform: translateY(6px) rotate(0deg);
+                    }
+                }
+            }
+        }
+        .icon {
+            display: inline-block;
+            position: absolute;
+            height: 100%;
+            line-height: 50px;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            color: #FFF;
+            font-size: 22px;
+            left: 50%;
+            transform: translateX(-50%);
+            &.icon-bag {
+                right: 0;
+                top: 0;
+                left: auto;
+                transform: translateX(0px);
+                transition: transform 0.5s $cubic;
+                transition-delay: 0.65s;
+            }
+        }
+        ul.menu {
+            position: relative;
+            display: block;
+            padding: 0px 48px 0;
+            list-style: none;
+            li.menu-item {
+                border-bottom: 1px solid #333;
+                margin-top: 5px;
+                transform: scale(1.15) translateY(-30px);
+                opacity: 0;
+                transition: transform 0.5s $cubic, opacity 0.6s $cubic;
+                @for $i from 1 through $menuItems {
+                    &:nth-child(#{$i}) {
+                        transition-delay: #{0.56 - ($i * 0.07)}s;
+                    }
+                }
+                a {
+                    display: block;
+                    position: relative;
+                    color: #FFF;
+                    font-family: $mukta;
+                    font-weight: 100;
+                    text-decoration: none;
+                    font-size: 22px;
+                    line-height: 2.35;
+                    font-weight: 200;
+                    width: 100%;
+                }
+            }
+        }
+        &.menu-opened {
+            height: 100%;
+            background-color: #000;
+            transition: all 0.3s ease-in, background 0.5s ease-in;
+            transition-delay: 0.25s;
+            .burger-container {
+                transform: rotate(90deg);
+                #burger {
+                    .bar {
+                        transition: all 0.4s $cubic;
+                        transition-delay: 0.2s;
+                        &.topBar {
+                            transform: translateY(4px) rotate(45deg);
+                        }
+                        &.btmBar {
+                            transform: translateY(3px) rotate(-45deg);
+                        }
+                    }
+                }
+            }
+            ul.menu {
+                li.menu-item {
+                    transform: scale(1) translateY(0px);
+                    opacity: 1;
+                    @for $i from 1 through $menuItems {
+                        &:nth-child(#{$i}) {
+                            transition-delay: #{0.07 * $i+0.2}s;
+                        }
+                    }
+                }
+            }
+            .icon {
+                &.icon-bag {
+                    transform: translateX(75px);
+                    transition-delay: 0.3s;
+                }
+            }
+        }
+    }
+    .content {
+        font-family: $mukta;
+        padding: 67px 4% 0;
+        text-align: justify;
+        overflow: scroll;
+        max-height: 100%;
+        &::-webkit-scrollbar  {
+            display: none;
+        }
+        h2 {
+            margin-bottom: 0px;
+            letter-spacing: 1px;
+        }
+        img {
+            width: 95%;
+            position: relative;
+            display: block;
+            margin: 75px auto 75px;
+            &:nth-of-type(2) {
+                margin: 75px auto;
+            }
+        }
+    }
+    

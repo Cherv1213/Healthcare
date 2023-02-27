@@ -8,7 +8,7 @@ $clr-fff:#fff;
 /*-------------------------------------------------------------------------------------------------*/
 .button{
    display: inline-block;
-   color: #fff;
+   color: $clr-fff;
    background-color: $clr-blue;
    border-radius: 5px;
    padding: 0.87em 1.8em;

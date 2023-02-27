@@ -1,3 +1,4 @@
+
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu__body');
 const menuItem = document.querySelectorAll('.menu__item');
@@ -12,6 +13,7 @@ if(iconMenu){
       })
    });
 }
+
 /*-------------------------------------------------------------------------------------------------*/
 $(document).ready(function() {
    $('.js-example-basic-single').select2();
