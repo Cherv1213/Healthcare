@@ -1,7 +1,7 @@
 
 footer{
    background-color: $clr-fff;
-   padding-bottom: 2rem;
+
    border-bottom: 1px solid hsla(0, 0%, 59%, 0.2);
  .container {
    
@@ -90,6 +90,7 @@ footer{
 
 .footer__rules {
    padding: 0.625rem 0;
+   background-color: #f5fbfa;
    .container{
    display: flex;
    justify-content: space-between;
