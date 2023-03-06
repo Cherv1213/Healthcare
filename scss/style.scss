@@ -19,7 +19,7 @@
 .main__body {
    position: relative;
    bottom: 11.875rem;
-   width: 35.375rem;
+   max-width: 35.375rem;
    h1{
       color: $clr-3e3e;
       font-weight: 500;
@@ -267,7 +267,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   width: 5rem;
+   max-width: 5rem;
    height: 5rem;
    margin: 0 auto 5px;
   
@@ -480,7 +480,7 @@
 .sertified__item {
    padding: 0px 13px 20px;
    background-color: $clr-fff;
-   width: 264px;
+   max-width: 16.5rem;
    border-radius: 10px;
   
    p{
