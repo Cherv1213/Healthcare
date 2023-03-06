@@ -8,9 +8,9 @@
 /*-------------------------------Main------------------------------------------------------------------*/
 .main__page {
    background: url(../img/background.png)0 0/cover;
-   padding-top: 100px;
+   padding-top: 120px;
    .container {
-      min-height:calc(100vh - 100px);
+      min-height:calc(100vh - 120px);
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
